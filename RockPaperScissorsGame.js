@@ -53,6 +53,22 @@ function playRound (humanChoice, computerChoice) {
 
 }
 
+function getWinnerPoints(winner){
+    
+    let addScore = [0,0]
+
+    if (winner == "Computer wins"){
+        addScore[1] = 1;
+    }
+    else if (winner == "Human wins") {
+        addScore[0] = 1;
+    }
+    else{}
+
+    return addScore;
+
+}
+
 /* Game Section */
 
 let scores = [0,0] /* First is human score, second is computer score */

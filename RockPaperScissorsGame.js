@@ -16,6 +16,43 @@ function getHumanChoice () {
     return gameOptions[humanChoice];
 }
 
+function playRound (humanChoice, computerChoice) {
+
+    if (humanChoice=="Rock" && computerChoice=="Paper"){
+        return "Computer wins"
+    }
+    else if (humanChoice=="Rock" && computerChoice=="Rock"){
+        return "Draw"
+    }
+    else if (humanChoice=="Rock" && computerChoice=="Scissors"){
+        return "Human wins"
+    }
+
+    else if (humanChoice=="Paper" && computerChoice=="Scissors"){
+        return "Computer wins"
+    }
+    else if (humanChoice=="Paper" && computerChoice=="Paper"){
+        return "Draw"
+    }
+    else if (humanChoice=="Paper" && computerChoice=="Rock"){
+        return "Human wins"
+    }
+
+    else if (humanChoice=="Scissors" && computerChoice=="Rock"){
+        return "Computer wins"
+    }
+    else if (humanChoice=="Scissors" && computerChoice=="Scissors"){
+        return "Draw"
+    }
+    else if (humanChoice=="Scissors" && computerChoice=="Paper"){
+        return "Human wins"
+    }
+    else {
+        return "error"
+    }
+
+}
+
 /* Game Section */
 
 console.log(getComputerChoice());

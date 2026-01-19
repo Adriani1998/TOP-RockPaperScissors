@@ -56,6 +56,3 @@ function playRound (humanChoice, computerChoice) {
 /* Game Section */
 
 let scores = [0,0] /* First is human score, second is computer score */
-
-console.log(getComputerChoice());
-console.log(getHumanChoice());
